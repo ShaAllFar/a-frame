@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="texture" src="texture.png">
+      </a-assets>
+      <a-box color="red" width="4" height="8" depth="2"
+         position="-10 0 -15" rotation="0 0 0" scale="2 .5 3">
+      <a-animation attribute="rotation" end="click" repeat="indefinite" to="0 360 0"></a-animation>
+    </a-box>
+      <a-camera position="0 1.8 0">
+   <a-cursor color="#2E3A87"></a-cursor>
+ </a-camera>
+  <a-light type="point" color="#AAA" position="0 5 0"></a-light>
+    </a-scene>
+    <a-sky color="#73F7DD"></a-sky>
+  </body>
+</html>
